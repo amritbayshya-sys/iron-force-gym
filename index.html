@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iron Force Gym</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.9);
+    z-index:1000;
+}
+
+.logo{
+    font-size:27px;
+    font-weight:bold;
+    color:#ff4d00;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff4d00;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px 50px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:65px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ff4d00;
+}
+
+.hero p{
+    font-size:20px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 32px;
+    background:#ff4d00;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#ff6a2a;
+}
+
+/* SECTIONS */
+section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:45px;
+}
+
+.title span{
+    color:#ff4d00;
+}
+
+/* ABOUT */
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.about p{
+    color:#bbb;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* PROGRAMS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    padding:35px 25px;
+    background:#171717;
+    border:1px solid #292929;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#ff4d00;
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:23px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#aaa;
+    line-height:1.6;
+}
+
+/* TRAINERS */
+.trainer{
+    background:#111;
+}
+
+/* PLANS */
+.price{
+    font-size:35px;
+    color:#ff4d00;
+    margin:20px 0;
+}
+
+.card ul{
+    list-style:none;
+    color:#ccc;
+    line-height:2;
+    margin-bottom:20px;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    background:#171717;
+}
+
+.contact p{
+    color:#ccc;
+    font-size:18px;
+    margin:15px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#050505;
+    color:#777;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    nav{
+        padding:15px 5%;
+    }
+
+    .logo{
+        font-size:21px;
+    }
+
+    nav a{
+        margin-left:8px;
+        font-size:13px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:65px 5%;
+    }
+
+    .title{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">IRON FORCE</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            BUILD YOUR
+            <span>STRONGEST</span>
+            SELF
+        </h1>
+
+        <p>
+            Train Hard. Stay Strong. Become Unstoppable.
+        </p>
+
+        <a href="#plans" class="btn">
+            JOIN NOW
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section>
+
+    <div class="about">
+
+        <h2 class="title">
+            ABOUT <span>OUR GYM</span>
+        </h2>
+
+        <p>
+            Welcome to Iron Force Gym — a place where dedication,
+            strength and discipline come together. Our goal is to
+            help you become stronger, healthier and more confident.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- PROGRAMS -->
+<section id="programs">
+
+    <h2 class="title">
+        OUR <span>PROGRAMS</span>
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🏋️</div>
+            <h3>Strength Training</h3>
+            <p>
+                Build strength with structured workouts
+                and proper training techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💪</div>
+            <h3>Muscle Building</h3>
+            <p>
+                Progressive training designed to help
+                you build muscle and strength.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔥</div>
+            <h3>Fitness Training</h3>
+            <p>
+                Improve your overall fitness, stamina
+                and daily energy.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRAINERS -->
+<section class="trainer" id="trainers">
+
+    <h2 class="title">
+        OUR <span>TRAINERS</span>
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">👨‍🏫</div>
+            <h3>Expert Trainer</h3>
+            <p>
+                Professional guidance to help you
+                train safely and effectively.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏆</div>
+            <h3>Strength Coach</h3>
+            <p>
+                Focused coaching for strength and
+                performance training.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PLANS -->
+<section id="plans">
+
+    <h2 class="title">
+        MEMBERSHIP <span>PLANS</span>
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>MONTHLY</h3>
+
+            <div class="price">₹999</div>
+
+            <ul>
+                <li>✓ Full Gym Access</li>
+                <li>✓ Equipment Access</li>
+                <li>✓ Basic Guidance</li>
+            </ul>
+
+            <a href="#contact" class="btn">
+                JOIN NOW
+            </a>
+        </div>
+
+
+        <div class="card">
+            <h3>3 MONTHS</h3>
+
+            <div class="price">₹2499</div>
+
+            <ul>
+                <li>✓ Full Gym Access</li>
+                <li>✓ Equipment Access</li>
+                <li>✓ Trainer Guidance</li>
+            </ul>
+
+            <a href="#contact" class="btn">
+                JOIN NOW
+            </a>
+        </div>
+
+
+        <div class="card">
+            <h3>YEARLY</h3>
+
+            <div class="price">₹7999</div>
+
+            <ul>
+                <li>✓ Full Gym Access</li>
+                <li>✓ Equipment Access</li>
+                <li>✓ Trainer Guidance</li>
+            </ul>
+
+            <a href="#contact" class="btn">
+                JOIN NOW
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="title">
+        CONTACT <span>US</span>
+    </h2>
+
+    <p>📍 Your Gym Location, Guwahati</p>
+
+    <p>📞 +91 98765 43210</p>
+
+    <p>📧 ironforcegym@email.com</p>
+
+    <br>
+
+    <a
+      href="https://wa.me/919876543210"
+      class="btn"
+      target="_blank">
+      CHAT ON WHATSAPP
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026 Iron Force Gym | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
